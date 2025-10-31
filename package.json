@@ -1,0 +1,7 @@
+{
+  "name": "ticketflow-twig",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "php scripts/build.php"
+  }
+}

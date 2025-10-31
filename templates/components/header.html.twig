@@ -1,0 +1,45 @@
+{% set user = session.user %}
+
+<header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a href="/" class="text-2xl font-bold text-blue-600">TicketFlow</a>
+
+            {% if user %}
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/dashboard" 
+                       class="text-sm font-medium {{ current_path == '/dashboard' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600' }}">
+                        Dashboard
+                    </a>
+                    <a href="/tickets" 
+                       class="text-sm font-medium {{ current_path == '/tickets' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600' }}">
+                        Tickets
+                    </a>
+                    <button onclick="logout()" 
+                            class="flex items-center space-x-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                        <i data-lucide="log-out" class="w-4 h-4"></i>
+                        <span>Logout</span>
+                    </button>
+                </nav>
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            {% else %}
+                <div class="flex items-center space-x-4">
+                    <a href="/auth/login" class="text-sm font-medium text-gray-700 hover:text-blue-600">Login</a>
+                    <a href="/auth/signup" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+        {% if user %}
+            <div id="mobile-menu" class="md:hidden py-4 space-y-2 hidden">
+                <a href="/dashboard" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Dashboard</a>
+                <a href="/tickets" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Tickets</a>
+                <button onclick="logout()" class="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded">Logout</button>
+            </div>
+        {% endif %}
+    </div>
+</header>

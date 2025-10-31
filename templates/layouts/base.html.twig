@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TicketFlow{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    {% include 'components/header.html.twig' %}
+    
+    <main class="flex-1">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'components/footer.html.twig' %}
+
+    {% block javascript %}
+    <script src="/js/app.js"></script>
+    {% endblock %}
+</body>
+</html>
