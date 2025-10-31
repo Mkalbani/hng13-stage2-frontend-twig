@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketFlow - Manage Tickets with Ease</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    
+<header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a href="/" class="text-2xl font-bold text-blue-600">TicketFlow</a>
+
+                            <div class="flex items-center space-x-4">
+                    <a href="/auth/login" class="text-sm font-medium text-gray-700 hover:text-blue-600">Login</a>
+                    <a href="/auth/signup" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+                    </div>
+
+            </div>
+</header>    
+    <main class="flex-1">
+        <div class="min-h-screen flex flex-col">
+        <div class="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white overflow-hidden">
+                <div class="absolute top-10 right-10 w-64 h-64 bg-blue-400 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-48 h-48 bg-purple-400 rounded-full opacity-20 blur-2xl"></div>
+        
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-32">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Manage Tickets with Ease
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    The most intuitive ticket management system for modern teams. Track, organize, and resolve issues faster.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/auth/signup" 
+                       class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg">
+                        Get Started Free
+                    </a>
+                    <a href="/auth/login"
+                       class="px-8 py-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors border-2 border-blue-500">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+                <div class="absolute bottom-0 left-0 w-full">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64 C360,20 720,20 1080,64 C1260,86 1350,96 1440,96 L1440,120 L0,120 Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            Powerful Features
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-blue-600 mb-4">
+                    <i data-lucide="ticket" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Easy Ticket Creation</h3>
+                <p class="text-gray-600">Create and organize tickets in seconds with our intuitive interface.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-blue-600 mb-4">
+                    <i data-lucide="bar-chart-3" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Real-time Analytics</h3>
+                <p class="text-gray-600">Get instant insights into your ticket workflow and team performance.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-blue-600 mb-4">
+                    <i data-lucide="check-circle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Status Tracking</h3>
+                <p class="text-gray-600">Monitor ticket progress from open to resolution with clear status indicators.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="bg-gray-50 py-20">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full opacity-10 transform translate-x-32 -translate-y-32"></div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Ready to Get Started?
+                    </h2>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Join thousands of teams managing their tickets efficiently.
+                    </p>
+                    <a href="/auth/signup"
+                       class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">TicketFlow</h3>
+                <p class="text-gray-400 text-sm">
+                    Streamline your ticket management with our powerful and intuitive platform.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>About Us</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Contact</h4>
+                <p class="text-sm text-gray-400">
+                    Email: support@ticketflow.com<br>
+                    Phone: +1 (555) 123-4567
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            © 2025 TicketFlow. All rights reserved.
+        </div>
+    </div>
+</footer>
+        <script src="/js/app.js"></script>
+    </body>
+</html>
