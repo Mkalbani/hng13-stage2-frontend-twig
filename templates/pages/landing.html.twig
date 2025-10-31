@@ -3,6 +3,8 @@
 {% block title %}TicketFlow - Manage Tickets with Ease{% endblock %}
 
 {% block content %}
+{% set base = base_path|default('') %}
+
 <div class="min-h-screen flex flex-col">
     {# Hero Section #}
     <div class="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white overflow-hidden">
@@ -19,11 +21,11 @@
                     The most intuitive ticket management system for modern teams. Track, organize, and resolve issues faster.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/auth/signup" 
+                    <a href="{{ base }}/auth/signup" 
                        class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg">
                         Get Started Free
                     </a>
-                    <a href="/auth/login"
+                    <a href="{{ base }}/auth/login"
                        class="px-8 py-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors border-2 border-blue-500">
                         Login
                     </a>
@@ -83,7 +85,7 @@
                     <p class="text-xl mb-8 text-blue-100">
                         Join thousands of teams managing their tickets efficiently.
                     </p>
-                    <a href="/auth/signup"
+                    <a href="{{ base }}/auth/signup"
                        class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg">
                         Start Free Trial
                     </a>

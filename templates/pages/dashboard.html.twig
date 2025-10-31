@@ -1,3 +1,4 @@
+{% set base = base_path|default('') %}
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}Dashboard - TicketFlow{% endblock %}
@@ -58,14 +59,14 @@
             <div class="bg-white rounded-xl shadow-lg p-8">
                 <h2 class="text-2xl font-bold mb-6">Quick Actions</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a href="/tickets"
+                    <a href="{{ base }}/tickets"
                        class="p-6 border-2 border-blue-200 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-all text-left">
                         <i data-lucide="ticket" class="text-blue-600 mb-3 w-8 h-8"></i>
                         <h3 class="text-lg font-semibold mb-2">Manage Tickets</h3>
                         <p class="text-gray-600 text-sm">View, create, edit, and delete tickets</p>
                     </a>
                     
-                    <a href="/tickets"
+                    <a href="{{ base }}/tickets"
                        class="p-6 border-2 border-green-200 rounded-lg hover:border-green-400 hover:bg-green-50 transition-all text-left">
                         <i data-lucide="plus" class="text-green-600 mb-3 w-8 h-8"></i>
                         <h3 class="text-lg font-semibold mb-2">Create New Ticket</h3>

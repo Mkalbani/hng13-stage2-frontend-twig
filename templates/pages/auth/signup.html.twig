@@ -1,3 +1,4 @@
+{% set base = base_path|default('') %}
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}Create Account - TicketFlow{% endblock %}
@@ -77,7 +78,7 @@
                 
                 <p class="text-center mt-6 text-gray-600">
                     Already have an account?{' '}
-                    <a href="/auth/login" class="text-blue-600 font-semibold hover:underline">
+                    <a href="{{ base }}/auth/login" class="text-blue-600 font-semibold hover:underline">
                         Login
                     </a>
                 </p>
