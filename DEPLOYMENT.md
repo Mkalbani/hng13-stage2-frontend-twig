@@ -3,6 +3,7 @@
 This application can be deployed to Vercel as a static site. Here's how to do it:
 
 1. Install dependencies:
+
 ```bash
 # Install PHP dependencies
 composer install
@@ -12,6 +13,7 @@ npm install -g vercel
 ```
 
 2. Build the static files:
+
 ```bash
 php scripts/build.php
 ```
@@ -19,17 +21,20 @@ php scripts/build.php
 This will create a `dist` directory with all the static files.
 
 3. Deploy to Vercel:
+
 ```bash
 vercel
 ```
 
 Follow the prompts from Vercel CLI to:
+
 - Log in to your Vercel account (if not already logged in)
 - Set up the project
 - Choose your team/account
 - Confirm the deployment
 
 The deployment process will:
+
 1. Upload the static files from the `dist` directory
 2. Configure the routing based on `vercel.json`
 3. Provide you with a deployment URL
@@ -51,11 +56,13 @@ To update your deployment:
 
 1. Make your changes
 2. Rebuild the static files:
+
 ```bash
 php scripts/build.php
 ```
 
 3. Deploy the updates:
+
 ```bash
 vercel
 ```

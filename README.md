@@ -52,11 +52,13 @@ This repository contains the Twig implementation of the TicketFlow frontend for 
 ## How to Run
 
 1. Install dependencies:
+
 ```bash
 composer install
 ```
 
 2. Start PHP development server:
+
 ```bash
 php -S localhost:8000 -t public
 ```
@@ -69,19 +71,16 @@ php -S localhost:8000 -t public
   - Login and signup pages with client-side validation
   - Session management using localStorage
   - Protected routes with authentication checks
-  
 - **Dashboard**
   - Overview of ticket statistics
   - Quick access to ticket management features
   - Real-time updates when tickets change
-  
 - **Ticket Management**
   - Create, view, edit, and delete tickets
   - Status tracking (Open, In Progress, Closed)
   - Priority levels (Low, Medium, High)
   - Form validation
   - Local storage persistence
-  
 - **Responsive Design**
   - Mobile-first approach
   - Adaptive layouts for different screen sizes
