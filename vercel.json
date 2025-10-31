@@ -1,16 +1,9 @@
 {
-  "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
-  },
+  "buildCommand": "php scripts/build.php",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/auth/login", "dest": "/auth/login/index.html" },
-    { "src": "/auth/signup", "dest": "/auth/signup/index.html" },
-    { "src": "/dashboard", "dest": "/dashboard/index.html" },
-    { "src": "/tickets", "dest": "/tickets/index.html" },
-    { "src": "/css/(.*)", "dest": "/css/$1" },
-    { "src": "/js/(.*)", "dest": "/js/$1" }
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
