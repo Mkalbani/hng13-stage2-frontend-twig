@@ -2,6 +2,7 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "buildCommand": "yum install -y php && curl -sS https://getcomposer.org/installer | php && php composer.phar install && php scripts/build.php",
   "routes": [
     { "src": "/css/(.*)", "dest": "/css/$1" },
     { "src": "/js/(.*)", "dest": "/js/$1" },
